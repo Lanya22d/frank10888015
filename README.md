@@ -2,5 +2,5 @@
 My name is Frank KwabLAH Vibah with the student id 10888015
 This project is an inventory management system for a provision shop. 
 As a matter of fact, i have been able to complete the user interface, 
-connect my project to mysql database but havent not been able to implement the algorithms and some of the structures. 
-Im hoping to finsih by the end of this week Thank you
+connect my project to mysql database . I have been able to add goods, view vendors information
+using stach data structure , hashmaps . Im hoping to add more functionalites to it.
