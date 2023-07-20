@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.man.AddVendor">
+   <top>
+      <Pane prefHeight="53.0" prefWidth="700.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="224.0" layoutY="2.0" text="ADD VENDORS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <VBox prefHeight="473.0" prefWidth="641.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="FIRST NAME">
+               <VBox.margin>
+                  <Insets left="200.0" top="90.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="Vendor_fName" promptText="First Name">
+               <VBox.margin>
+                  <Insets left="200.0" right="300.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="LAST NAME">
+               <VBox.margin>
+                  <Insets left="200.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="vendor_lname" layoutX="210.0" layoutY="87.0" promptText="Second Name">
+               <VBox.margin>
+                  <Insets left="200.0" right="300.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label layoutX="210.0" layoutY="122.0" text="DATE OF BIRTH">
+               <VBox.margin>
+                  <Insets left="200.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="DateOFBirth" layoutX="210.0" layoutY="189.0" promptText="Date of birht">
+               <VBox.margin>
+                  <Insets left="200.0" right="300.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label layoutX="210.0" layoutY="224.0" text="DATE OF REGISTER">
+               <VBox.margin>
+                  <Insets left="200.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="DateOfRegister" layoutX="210.0" layoutY="251.0" promptText="Date of register">
+               <VBox.margin>
+                  <Insets left="200.0" right="300.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label layoutX="210.0" layoutY="286.0" text="LOCATION">
+               <VBox.margin>
+                  <Insets left="200.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="Location" layoutX="210.0" layoutY="313.0" promptText="Location">
+               <VBox.margin>
+                  <Insets left="200.0" right="300.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <JFXButton fx:id="vendor_Save" onAction="#Save_Credential" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: GREY;" text="SAVE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="300.0" top="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="vendor_close" layoutX="310.0" layoutY="246.0" onAction="#BackBt_AddVendors" prefHeight="16.0" prefWidth="28.0" style="-fx-background-color: RED;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="70.0" left="280.0" top="50.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

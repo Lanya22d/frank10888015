@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.man.MainPage">
+   <right>
+      <Pane prefHeight="500.0" prefWidth="385.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="31.0" layoutY="195.0" prefHeight="122.0" prefWidth="330.0" text="INVENTORY" textFill="#b4e515">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="51.0" />
+               </font>
+            </Label>
+            <Label layoutX="152.0" layoutY="195.0" text="PROVII" textFill="WHITE">
+               <font>
+                  <Font name="Bernard MT Condensed" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="309.0" layoutY="14.0" style="-fx-background-color: RED;" text="LOGOUT" textFill="WHITE" />
+         </children>
+      </Pane>
+   </right>
+   <left>
+      <Pane prefHeight="500.0" prefWidth="317.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton layoutX="43.0" layoutY="95.0" onAction="#SwitchToAddGood_Screen" prefHeight="68.0" prefWidth="110.0" style="-fx-background-color: GREY;" text="ADD GOODS" textFill="WHITE" />
+            <JFXButton layoutX="43.0" layoutY="214.0" onAction="#SwitchToAddVendors_Screen" prefHeight="68.0" prefWidth="110.0" style="-fx-background-color: GREY;" text="ADD VENDORS" textFill="WHITE" />
+            <JFXButton layoutX="41.0" layoutY="342.0" onAction="#SwithToViewVendors_Screen" prefHeight="68.0" prefWidth="110.0" style="-fx-background-color: GREY;" text="VIEW VENDORS" textFill="WHITE" />
+            <JFXButton layoutX="184.0" layoutY="95.0" prefHeight="68.0" prefWidth="110.0" style="-fx-background-color: GREY;" text="VIEW BILLS" textFill="WHITE" />
+            <JFXButton layoutX="184.0" layoutY="214.0" prefHeight="68.0" prefWidth="110.0" style="-fx-background-color: GREY;" text="ISSUED GOODS" textFill="WHITE" />
+            <JFXButton layoutX="184.0" layoutY="342.0" prefHeight="68.0" prefWidth="110.0" style="-fx-background-color: GREY;" text="VIEW ISSUED GOODS" textFill="WHITE" />
+         </children>
+      </Pane>
+   </left>
+</BorderPane>

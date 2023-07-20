@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.man.ViewVendors">
+   <left>
+      <TableView fx:id="Table" prefHeight="442.0" prefWidth="541.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="FirstName" prefWidth="85.0" text="FIRST NAME" />
+          <TableColumn fx:id="LastName" prefWidth="95.0" text="LAST NAME" />
+            <TableColumn fx:id="DateOfRegister" prefWidth="122.0" text="DATE OF REGISTER" />
+            <TableColumn fx:id="DateOfBirth" prefWidth="114.0" text="DATE OF BIRTH" />
+            <TableColumn fx:id="Location" prefWidth="124.0" text="LOCATION" />
+        </columns>
+      </TableView>
+   </left>
+   <bottom>
+      <JFXButton onAction="#ViewVendors_BtnClose" style="-fx-background-color: RED;" text="BACK" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </BorderPane.margin>
+      </JFXButton>
+   </bottom>
+</BorderPane>
